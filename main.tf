@@ -22,7 +22,7 @@ resource "aws_amplify_app" "bitsight_amp_test" {
   
   custom_rule {
     source = "/<*>"
-    status = "404-200"
+    status = "404-2000"
     target = "/index.html"
   }
   custom_rule {
