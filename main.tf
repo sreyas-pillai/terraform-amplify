@@ -15,14 +15,14 @@ provider "aws" {
 
 # aws_amplify_app.bitsight_amp_test will be updated in-place
 resource "aws_amplify_app" "bitsight_amp_test" {
-  name         = "bitsight-amp-123"
+  name         = "bitsight-amp-123456"
   repository   = "https://github.com/Bluepineapple-io/bitsight-amp-frontend"
   access_token = "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"
   # branch_name = "main"
   
   custom_rule {
     source = "/<*>"
-    status = "404-2000"
+    status = "404-200"
     target = "/index.html"
   }
   custom_rule {
